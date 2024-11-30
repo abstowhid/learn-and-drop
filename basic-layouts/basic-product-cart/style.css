@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex; /* Flexbox for layout */
+  width: 1200px;
+  margin: auto;
+  background-color: hsl(20, 50%, 98%);
+  margin-top: 0px;
+}
+
+.menu {
+  flex: 1; /* Menu takes up available space */
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  /* grid-template-columns: 180px 180px 180px;
+  grid-template-rows: 250px 250px 250px; */
+  gap: 10px;
+}
+.product1 img {
+  width: 100%;
+  border-radius: 18px;
+}
+.product1 {
+  position: relative;
+  height: 340px;
+  width: 260px;
+}
+/* ?i did a mistake here. i forgot specificity */
+.product1 button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 236px;
+  left: 70px;
+  border: 1px solid brown;
+  transition: background-color 0.3s, transform 0.2s;
+  white-space: nowrap;
+}
+button img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin: 0;
+  padding: 0;
+  margin-right: 4px;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+button:hover {
+  background-color: #fb8c00;
+  transform: scale(1.05);
+}
+
+.price {
+  width: 150px;
+  height: 50px;
+  font-size: 9px;
+  line-height: 8px;
+  position: absolute;
+  bottom: 13px;
+}
+.price h3 {
+  line-height: 7px;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-size: 16px;
+}
+.price h4 {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+.cart {
+  position: sticky;
+  /* position: relative; */
+  top: 10px;
+  width: 350px;
+  height: 500px;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.cart::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cart::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.cart::-webkit-scrollbar-thumb {
+  /* margin: 10px; */
+  background: #bdd1df;
+  border-radius: 10px;
+}
+
+.cart::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
+}
+
+#confirm-order {
+  margin: 5px auto;
+  display: block;
+  background: #3498db;
+  position: relative;
+  right: auto;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  width: 300px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.4s, transform 0.3s;
+  border: 0px;
+  border-radius: 10px;
+}
+#confirm-order:hover {
+  background: #2c3e50;
+  border: 0px;
+}
+
+@media all and (max-width: 430px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+
+  .menu {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .product {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: auto auto;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .product1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 270px; */
+    height: auto;
+    position: static;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    align-items: center;
+    min-width: 100px;
+  }
+
+  .product1 img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .price {
+    font-size: 12px;
+    margin: 2px 0;
+    text-align: left;
+    position: static;
+    margin-left: 13px;
+  }
+
+  .product1 button {
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 12px;
+    /* align-self: center; */
+    margin-top: auto;
+    position: static;
+    white-space: nowrap;
+    margin-top: -5px;
+  }
+
+  .product1 button:hover {
+    background-color: #e67e22;
+  }
+
+  .product1 button img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .cart {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+    overflow-y: scroll;
+  }
+
+  #confirm-order {
+    width: 100%;
+    bottom: 7px;
+    left: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
