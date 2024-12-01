@@ -143,3 +143,108 @@ body {
 .container_div4 .text_part2 {
     color: rgb(105, 99, 99);
 }
+
+@media all and (max-width: 430px) {
+    body {
+        padding: 0px;
+        font-size: 12px;
+    }
+    #main {
+        width: 100%;
+        height: auto;
+        margin: 1px auto;
+        display: block;
+    }
+    #container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* margin: 50px auto; */
+        /* background-color: #edf2f8; */
+        padding: 0px;
+        gap: 2px;
+    }
+    .container_div1 {
+        width: 100%;
+        height: auto;
+
+        background-color: var(--color-1);
+        color: white;
+        grid-column: auto;
+        grid-row: auto;
+        padding: 30px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .container_div1::after {
+        content: '';
+        display: block;
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-size: cover;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        right: 30px;
+        top: 6px;
+        z-index: -1;
+    }
+
+    .container_div2 {
+        width: 100%;
+        height: auto;
+        background-color: var(--color-2);
+        color: white;
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+        justify-self: end;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .container_div3 {
+        width: 100%;
+
+        height: auto;
+    }
+    .container_div4 {
+        width: 100%;
+        height: auto;
+    }
+    .container_div5 {
+        width: 100%;
+        height: auto;
+    }
+    .image_div {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .image_image {
+        /* overflow: hidden; */
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .image_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .image_text {
+        margin-left: 7px;
+        font-size: 6px;
+    }
+    .text_part1 {
+        margin-top: -10px;
+    }
+    .text_part2 {
+        color: rgb(184, 184, 184);
+        margin-top: 4px;
+    }
+}
