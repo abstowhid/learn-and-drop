@@ -48,4 +48,11 @@ This repo is:
 
 ---
 
-Enjoy the chaos! 🚀
+## basic-layout Projects:
+
+1. [Basic Product Cart](https://abstowhid.github.io/learn-and-trash/basic-layouts/basic-product-cart/)
+2. [Results Summary Component](https://abstowhid.github.io/learn-and-trash/basic-layouts/results-summary-component-main/)
+3. [Testimonials Grid Section](https://abstowhid.github.io/learn-and-trash/basic-layouts/testimonials-grid-section/)
+
+
+Enjoy ! 🚀
