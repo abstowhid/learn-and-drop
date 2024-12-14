@@ -29,7 +29,6 @@ Sometimes you just need a place to:
 
 -   Half-baked ideas.
 -   Code snippets that _might_ work.
--   Debug logs, temporary files, and chaos.
 
 ---
 
@@ -37,7 +36,6 @@ Sometimes you just need a place to:
 
 1. Don’t expect much—seriously.
 2. Feel free to explore, break, or laugh at it.
-3. Don’t use this code in production (you’ve been warned).
 
 ---
 
