@@ -64,5 +64,6 @@ This repo is:
 2. [Results Summary Component](https://abstowhid.github.io/learn-and-trash/basic-layouts/results-summary-component-main/)
 3. [Testimonials Grid Section](https://abstowhid.github.io/learn-and-trash/basic-layouts/testimonials-grid-section/)
 4. [clipboard landing page master](https://abstowhid.github.io/learn-and-trash/basic-layouts/clipboard-landing-page-master/)
+5. [stats preview card component](https://abstowhid.github.io/learn-and-trash/basic-layouts/stats-preview-card-component-main/)
 
 Enjoy ! 🚀
