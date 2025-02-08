@@ -1,4 +1,4 @@
-# Learn and Trash
+# Learn and Drop
 
 🚀 _Where ideas go to fail gracefully!_
 
