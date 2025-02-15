@@ -64,4 +64,4 @@ This repo is:
 4. [clipboard landing page master](https://abstowhid.github.io/learn-and-trash/basic-layouts/clipboard-landing-page-master/)
 5. [stats preview card component](https://abstowhid.github.io/learn-and-trash/basic-layouts/stats-preview-card-component-main/)
 
-Enjoy ! 🚀
+Enjoy! 🚀
