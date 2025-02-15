@@ -24,5 +24,5 @@ if (nMyAge2 == 18) {
 }
 
 if (nMyAge2 === 18) {
-    console.log('that will not run'); // ❌ Doesn't run (strict comparison fails)
+    console.log('this will not run'); // ❌ Doesn't run (strict comparison fails)
 }
